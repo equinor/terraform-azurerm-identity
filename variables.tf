@@ -1,3 +1,8 @@
+variable "identity_name" {
+  description = "The name of this Managed identity."
+  type        = string
+}
+
 variable "resource_group_name" {
   description = "The name of the resource group to create the resources in."
   type        = string
