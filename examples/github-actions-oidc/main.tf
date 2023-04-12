@@ -31,21 +31,21 @@ module "identity" {
     "github_branch" = {
       name    = "github-branch"
       issuer  = "https://token.actions.githubusercontent.com"
-      subject = "repo:equinor/ops-actions:ref:refs/heads/main"
+      subject = "repo:my-org/my-repo:ref:refs/heads/main"
     }
 
     # Allow authentication from pull request
     "github_pr" = {
       name    = "github-pr"
       issuer  = "https://token.actions.githubusercontent.com"
-      subject = "repo:equinor/ops-actions:pull_request"
+      subject = "repo:my-org/my-repo:pull_request"
     }
 
     # Allow authentication from tag "dev"
     "github_tag" = {
       name    = "github-tag"
       issuer  = "https://token.actions.githubusercontent.com"
-      subject = "repo:equinor/ops-actions:ref:refs/tags/dev"
+      subject = "repo:my-org/my-repo:ref:refs/tags/dev"
     }
   }
 }
